@@ -2,7 +2,7 @@
 **Bold** *italic*
 ## Heading 2
 [Link](https://www.google.com/)
-![Image](https://media.macphun.com/img/uploads/customer/how-to/579/15531840725c93b5489d84e9.43781620.jpg?q=42.5&w=670)
+![Image](https://media.cntraveler.com/photos/60596b398f4452dac88c59f8/16:9/w_3999,h_2249,c_limit/MtFuji-GettyImages-959111140.jpg)
 > "The way to get started is to quit talking and begin doing." 
 > - Walt Disney
 * List 1
