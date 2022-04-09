@@ -1,7 +1,10 @@
-Lab Report 1
-[Lab Report 1](lab-report-1-week-2.html)
-[Lab Report 1](https://yuming73.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+# CSE 15L Lab Report 1
+## How To Log Into A Course-Specific Account On ieng6
+
+**Step 1**
+[Download Visual Studio Code](https://code.visualstudio.com/)
 ![installing vscode](lab1_screenshot1.png)
+
 ![remotely connecting](lab1_screenshot3.png)
 ![trying some commands](lab1_screenshot4.png)
 ![moving files with scp](lab1_screenshot2.png)
