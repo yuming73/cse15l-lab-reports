@@ -75,7 +75,7 @@ class WhereAmI {
 **Step 6**   
 **Optimizing Remote Running**   
 Ways to optimize the process of locally editing files, copying files to remote server, and running it:    
-* Set up an SSH key in place of a password: from our lab experiment, we found out that the process of editing and copying a file from local to remote can be reduced by approximately 18 seconds when a password is not required.    
+* Set up an SSH key in place of a password: from our lab experiment, we found out that the process of editing and copying a file from local to remote can be reduced by approximately 18 seconds when a password is not required    
 * Copy and paste commands, or use the up arrows to call the previous commands   
 * Use semicolons (;) to run multiple commands on the same line   
 * Write the command in quotation marks ("") at the end of an `ssh` command to directly run it on the remote server   
