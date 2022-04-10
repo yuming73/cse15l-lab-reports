@@ -2,7 +2,9 @@
 ## How To Log Into A Course-Specific Account On `ieng6`     
     
 **Step 1**   
-[**Download Visual Studio Code**](https://code.visualstudio.com/)    
+**Installing VScode**     
+1. Follow the instructions on [this website](https://code.visualstudio.com/) to download and install Visual Studio Code on the computer   
+2. When successfully installed and opened, you should see a page similar to this:   
 ![installing vscode](lab1_screenshot1.png)    
 
 ---
@@ -21,18 +23,18 @@
 **Step 3**  
 **Trying Some Commands**    
 Here's a list of suggestions of commands to try out:
-* `cd ~` ()
-* `cd` ()
-* `ls -lat` ()
-* `ls -a` ()
-* `ls <directory>` ()
+* `cd` (change directory: changes the current working directory)
+* `ls` (list: list the names of the files in the current working directory) 
+* `ls -l` (list long: list the file names, protection information, file owner, modified date and time, and number of characters in the file)  
+* `ls -a` (list all: list all the files in the current working directory, including those with period and hidden files)
+* `ls -t` (list time: list the files sorted based on the modification time, with the last edited file at the top of the list)
+* `ls -lat` (a combination of the above three `ls` commands)
 * Ctrl-D or `exit` (logs you out of the remote server in the terminal)
-* `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/` ()  
-* `cat /home/linux/ieng6/cs15lsp22/public/hello.txt` ()    
+* `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/` (copy: copies files and directories to another location)  
+* `cat /home/linux/ieng6/cs15lsp22/public/hello.txt` (concatenate: creates single/multiple files, view content of a file, and concatenate files)    
 
-When trying the last two commands, you might encounter something like this:   
-![trying some commands](lab1_screenshot4.png)  
-This means ()   
+*Notice that when trying the last two commands, you might encounter something like this, indicating that permission is denied from accessing the file, which means there's no permission to open or read the file:*  
+![trying some commands](lab1_screenshot4.png)     
 
 ---
 
@@ -54,7 +56,8 @@ class WhereAmI {
 4. The terminal should look similar to this in this process:   
 ![moving files with scp](lab1_screenshot2.png)    
 ![moving files with scp](lab1_screenshot5.png)    
-5. You can use `javac` and `java` to observe the difference between the outputs from running on the client (local computer) vs. running on the server (remote server)   
+5. You can use `javac` and `java` to observe the difference between the outputs from running on the client (local computer) vs. running on the server (remote server)  
+*Notice that the computer system, username, and user directory are different when run on the client versus the server. This means that the `getProperty` method in the `WhereAmI` class returns the specific properties (computer system, username, user directory) of a file based on whether it’s on the client or the server.*    
 
 ---
 
@@ -71,3 +74,4 @@ class WhereAmI {
 
 **Step 6**   
 **Optimizing Remote Running**   
+>When copying files from the client to the server, the optimal way is to set up an SSH key, so that a password is not required when logging into the remote server. From our lab experiment, we found out that the process can be reduced by approximately 18 seconds when a password is not required. Additionally, copying and pasting commands and remembering the account name will also save time in the process of remote running.   
