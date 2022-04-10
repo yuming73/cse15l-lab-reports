@@ -79,7 +79,7 @@ Ways to optimize the process of locally editing files, copying files to remote s
 * Copy and paste commands, or use the up arrows to call the previous commands   
 * Use semicolons (;) to run multiple commands on the same line   
 * Write the command in quotation marks ("") at the end of an `ssh` command to directly run it on the remote server   
-For example, by running the command: `$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`, (replaced *`zz`* with last three letters in the account name) all the files in the remote server is listed without running a second command:  
+* For example, by running the command: `$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`, (replaced *`zz`* with last three letters in the account name) all the files in the remote server is listed without running a second command:  
 ![optimizing remote running](lab1_screenshot7.png)   
 
 ---
