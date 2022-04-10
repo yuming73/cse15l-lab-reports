@@ -74,4 +74,12 @@ class WhereAmI {
 
 **Step 6**   
 **Optimizing Remote Running**   
->When copying files from the client to the server, the optimal way is to set up an SSH key, so that a password is not required when logging into the remote server. From our lab experiment, we found out that the process can be reduced by approximately 18 seconds when a password is not required. Additionally, copying and pasting commands and remembering the account name will also save time in the process of remote running.   
+Ways to optimize the process of locally editing files, copying files to remote server, and running it:    
+* Set up an SSH key in place of a password: from our lab experiment, we found out that the process of editing and copying a file from local to remote can be reduced by approximately 18 seconds when a password is not required.    
+* Copy and paste commands, or use the up arrows to call the previous commands   
+* Use semicolons (;) to run multiple commands on the same line   
+* Write the command in quotation marks ("") at the end of an `ssh` command to directly run it on the remote server   
+For example, by running the command: `$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`, (replaced *`zz`* with last three letters in the account name) all the files in the remote server is listed without running a second command:  
+![optimizing remote running](lab1_screenshot7.png)   
+
+---
