@@ -1,8 +1,8 @@
 # [CSE 15L Lab Report 1](https://yuming73.github.io/cse15l-lab-reports/lab-report-1-week-2.html)  
 ## How To Log Into A Course-Specific Account On `ieng6`     
 ---     
-**Step 1**  
-[**Download Visual Studio Code**](https://code.visualstudio.com/)
+**Step 1**   
+[**Download Visual Studio Code**](https://code.visualstudio.com/)    
 ![installing vscode](lab1_screenshot1.png)    
 
 **Step 2**   
