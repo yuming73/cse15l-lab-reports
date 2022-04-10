@@ -1,9 +1,11 @@
 # [CSE 15L Lab Report 1](https://yuming73.github.io/cse15l-lab-reports/lab-report-1-week-2.html)  
 ## How To Log Into A Course-Specific Account On `ieng6`     
----     
+    
 **Step 1**   
 [**Download Visual Studio Code**](https://code.visualstudio.com/)    
 ![installing vscode](lab1_screenshot1.png)    
+
+---
 
 **Step 2**   
 **Remotely Connecting**  
@@ -13,6 +15,8 @@
 2. Say yes to the "*Are you sure you want to continue connecting*" messages if connecting to the server for the first time  
 3. Provide your password and the terminal should look something similar to this to indicate that you are logged in:  
 ![remotely connecting](lab1_screenshot3.png)   
+
+---
 
 **Step 3**  
 **Trying Some Commands**    
@@ -29,6 +33,8 @@ Here's a list of suggestions of commands to try out:
 When trying the last two commands, you might encounter something like this:   
 ![trying some commands](lab1_screenshot4.png)  
 This means ()   
+
+---
 
 **Step 4**  
 **Moving Files With `scp`**   
@@ -50,6 +56,8 @@ class WhereAmI {
 ![moving files with scp](lab1_screenshot5.png)    
 5. You can use `javac` and `java` to observe the difference between the outputs from running on the client (local computer) vs. running on the server (remote server)   
 
+---
+
 **Step 5**   
 **Setting an SSH Key**    
 1. On the client (local computer), run the command: `ssh-keygen`, **do not add a passphrase for this step**
@@ -58,6 +66,8 @@ class WhereAmI {
 4. When prompt to select a path, use the path you saw in the command above   
 5. You should now be able to log into `ieng6` without a password, with a terminal similar to this:  
 ![remote login without password](lab1_screenshot6.png)   
+
+---
 
 **Step 6**   
 **Optimizing Remote Running**   
