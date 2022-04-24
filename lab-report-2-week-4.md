@@ -13,7 +13,7 @@
 ---   
 
 **2. Second Example - Unchecked Exception**    
-* **Bug:** The flaw in the previous code is the while loop did not check for conditions when there are incomplete or no parentheses or brackets in the file.    
+* **Bug:** The flaw in the previous code is the while loop did not check for conditions when there are incomplete or no parentheses and brackets in the file.    
 * **Code Changes:** If any of the `openBracket`, `closeBracket`, `openParen`, `closeParen` variables are set to an index of -1, then the parentheses and brackets in the file either do not exist or are not complete. The program will break from the while loop as a result.    
 ![code change diff 2](lab3_screenshot3.png)    
 * **[Test File:](https://github.com/yuming73/markdown-parser/commit/8d20e8d24ce16085bd3f9109ffabed8e2b8fe2f0)** This file contains the failure-inducing input, which caused an index out of bounds exception because the program did not take into account that the file does not contain any parentheses.    
