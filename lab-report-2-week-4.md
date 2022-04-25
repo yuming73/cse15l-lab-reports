@@ -33,6 +33,6 @@
 * **Symptom:** Since the link contained within the parentheses is directed to an image, the expected output is `[]`, but the actual output is `[page.com]`, depicting an incorrect output is produced. Specifically, the wrong answer resulted from the program taking in any links that are contained within parentheses.    
 ![incorrect output](lab3_screenshot6.png)    
 
-*In this case, the file containing a link to an image is the failure-inducing input. In processing this file, the symptom appear as an incorrect output because a link is return when an empty list is expected. This bug is a logical error and results from not checking the validity of the link, or whether it is directed to an image or a website. Viewing the failure-inducing input and the symptom helps with fixing this bug by adding an if statement to check whether the link is valid and directs to a website before adding the link to the arraylist.*    
+*In this case, the failure-inducing input is the file that contains `![link](page.com)`, indicating the link is directed to an image. In processing this file in the `main`, the symptom appear as an incorrect output because the list with a link is return when an empty list is expected. This bug is a logical error and results from not checking the validity of the link, or whether or not it is a website link. Viewing the failure-inducing input and the symptom helps to fix this bug by adding an if statement to check whether the link directs to a website before adding it to the arraylist.*    
 
 ---   
