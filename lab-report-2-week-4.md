@@ -27,7 +27,7 @@
 
 ### 3. Third Example - Incorrect Output    
 * **Bug:** The flaw in the previous code is that the while loop did not check for conditions when the link within the parentheses directs to an image rather than a website.    
-* **Code Changes:** If the indices of the text "image" is greater than the `closeBracket` index and less than the `openBracket` index, then the link within the parentheses is valid and not directed to an image. The program will add the contained link to the arraylist.    
+* **Code Changes:** If the indices of the text `"image"` is greater than the `closeBracket` index and less than the `openBracket` index, then the link within the parentheses is valid and not directed to an image. The program will add the contained link to the arraylist.    
 ![code change diff 3](lab3_screenshot5.png)    
 * **[Test File:](https://github.com/yuming73/markdown-parser/commit/43c5b82c125c0f295edeaa01462997f54ff0b654)** This file contains the failure-inducing input, which caused an incorrect output because the program did not check whether the link is directed to a website or an image.    
 * **Symptom:** Since the link contained within the parentheses is directed to an image, the expected output is `[]`, but the actual output is `[page.com]`, depicting an incorrect output is produced. Specifically, the wrong answer resulted from the program taking in any links that are contained within parentheses.    
