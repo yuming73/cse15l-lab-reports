@@ -8,7 +8,8 @@
 * **[Test File:](https://github.com/yuming73/markdown-parser/commit/c8a4acc428375c279d1824fb3340ee390fa525dd)** This file contains the failure-inducing input, which caused a runtime error because the program mistakenly took the parentheses within the link to be the outer parentheses that contain the link.    
 * **Symptom:** A `java.lang.OutOfMemoryError` is indicated as followed, depicting a runtime error. Specifically, the error resulted from an infinite loop as the program continue to iterate to find the close parenthesis and never break from the while loop.    
 ![runtime failure](lab3_screenshot1.png)    
-* *The relationship between the bug, the symptom, and the failure-inducing input is that .*    
+
+*As a flaw in the computer system, the bug is the result of the symptom, which in turn is a faulty program behavior that results from the failure-inducing input. In this case, the file containing the link `https://something[]().com` is the failure-inducing input. In processing this file, the symptom appear as a runtime error. From the error message, the bug can be identify to locate at line 19 in the `getLinks()` class, or the `toReturn.add(markdown.substring(openParen+1, closeParen))` code. Through debugging, it can be determined that the bug resulted from an infinite loop and can be fix by adding an if statement to continue the search for the close parenthesis at a new index when the link contains parentheses. Knowing the failure-inducing input and the symptom helps with the debugging process.*    
 
 ---   
 
@@ -18,8 +19,9 @@
 ![code change diff 2](lab3_screenshot3.png)    
 * **[Test File:](https://github.com/yuming73/markdown-parser/commit/8d20e8d24ce16085bd3f9109ffabed8e2b8fe2f0)** This file contains the failure-inducing input, which caused an index out of bounds exception because the program did not take into account that the file does not contain any parentheses.    
 * **Symptom:** An `java.lang.StringIndexOutOfBoundsException` is thrown as followed, depicting an unchecked exception. Specifically, the exception resulted from the `closeParen` and `openParen` variables being set to an index of -1 because no parentheses are found in the file.    
-![index out of bounds](lab3_screenshot4.png)    
-* *The relationship between the bug, the symptom, and the failure-inducing input is that .*    
+![index out of bounds](lab3_screenshot4.png)   
+
+*In this case, the file containing an empty bracket but no parentheses is the failure-inducing input. In processing this file, the symptom appear as an index out of bounds exception at runtime. From the error message, the bug can be identify to locate at line 26 in the `getLinks()` class, or the `toReturn.add(markdown.substring(openParen+1, closeParen))` code. Through debugging, it can be determined that the bug is a logical error and resulted from setting the `closeParen` and `openParen` variables as -1. By viewing the failure-inducing input and the symptom, this bug can be fix by adding an if statement to break the while loop if there are incomplete or no brackets and parentheses.*    
 
 ---   
 
@@ -30,6 +32,7 @@
 * **[Test File:](https://github.com/yuming73/markdown-parser/commit/43c5b82c125c0f295edeaa01462997f54ff0b654)** This file contains the failure-inducing input, which caused an incorrect output because the program did not check whether the link is directed to a website or an image.    
 * **Symptom:** Since the link contained within the parentheses is directed to an image, the expected output is `[]`, but the actual output is `[page.com]`, depicting an incorrect output is produced. Specifically, the wrong answer resulted from the program taking in any links that are contained within parentheses.    
 ![incorrect output](lab3_screenshot6.png)    
-* *The relationship between the bug, the symptom, and the failure-inducing input is that .*    
+
+*In this case, the file containing a link to an image is the failure-inducing input. In processing this file, the symptom appear as an incorrect output. Through debugging, it can be determined that the bug is a logical error and resulted from not checking the validity of the link. By viewing the failure-inducing input and the symptom, this bug can be fix by adding an if statement to check whether the link is valid and directs to a website before adding the link to the arraylist.*    
 
 ---   
