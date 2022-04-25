@@ -1,7 +1,7 @@
 # [CSE 15L Lab Report 2](https://yuming73.github.io/cse15l-lab-reports/lab-report-2-week-4.html)    
 ## Examples of Debugging    
 
-**1. First Example - Runtime Error**    
+### 1. First Example - Runtime Error    
 * **Bug:** The flaw in the previous code is that the while loop did not check for conditions when the link contains parentheses.    
 * **Code Changes:** If the difference between the indices of the close and open parentheses is zero, then the parentheses is empty with no links. The program will search for a new index of the close parenthesis that contains a valid link, starting from the previously stored value of the `closeParen` variable.    
 ![code change diff 1](lab3_screenshot2.png)    
@@ -13,7 +13,7 @@
 
 ---   
 
-**2. Second Example - Unchecked Exception**    
+### 2. Second Example - Unchecked Exception    
 * **Bug:** The flaw in the previous code is that the while loop did not check for conditions when there are incomplete or no parentheses and brackets in the file.    
 * **Code Changes:** If any of the `openBracket`, `closeBracket`, `openParen`, `closeParen` variables are set to an index of -1, then the parentheses and brackets in the file either do not exist or are not complete. The program will break from the while loop as a result.    
 ![code change diff 2](lab3_screenshot3.png)    
@@ -25,7 +25,7 @@
 
 ---   
 
-**3. Third Example - Incorrect Output**    
+### 3. Third Example - Incorrect Output    
 * **Bug:** The flaw in the previous code is that the while loop did not check for conditions when the link within the parentheses directs to an image rather than a website.    
 * **Code Changes:** If the indices of the text "image" is greater than the `closeBracket` index and less than the `openBracket` index, then the link within the parentheses is valid and not directed to an image. The program will add the contained link to the arraylist.    
 ![code change diff 3](lab3_screenshot5.png)    
