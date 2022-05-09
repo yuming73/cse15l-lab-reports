@@ -12,7 +12,7 @@
 ---   
 
 ### Option 2- Setup Github Access From ieng6   
-1.   
+1. The public key    
 ![public key on Github](lab5_screenshot4.png)   
 2.    
 ![log onto on ieng6](lab5_screenshot5.png)   
