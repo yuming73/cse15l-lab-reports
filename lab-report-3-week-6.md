@@ -2,11 +2,11 @@
 ## Group Choice Options From Lab 5    
 
 ### Option 1- Streamlinging ssh Configuration    
-1.   
+1. Create a `.ssh/config` file using the command `vim ~/.ssh/config` in the terminal. The file should contain the hostname and the user of the remote host `ieng6`. To save the file after editing, click on the `esc` button and type `:wq`, which means to save and exit the editor.   
 ![.ssh/config file](lab5_screenshot1.png)   
-2.   
+2. We should now be able to log onto the `ieng6` remote server just by using the command `ssh ieng6`, in which case the `ieng6` is a shortened alias for our account name.  
 ![ssh command](lab5_screenshot2.png)   
-3.    
+3. We can also use the `scp` command to copy files to the remote account with just the `ieng6` alias.    
 ![scp command](lab5_screenshot3.png)   
 
 ---   
