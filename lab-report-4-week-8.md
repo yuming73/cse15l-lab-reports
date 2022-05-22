@@ -13,19 +13,18 @@
 ![expected output3](lab7-screenshot6.png)   
 
 **Tests in `MarkdownParseTest.java`**   
+*I created a new file for each snippet and added the tests for each snippet file.*   
 ![snippet tests](lab7-screenshot2.png)   
-*I created a new file for each snippet and added the tests for each snippet file.*
     
-**Output From My `MarkdownParse.java` Implementation**   
+**Output From My `MarkdownParse.java` Implementation**     
+*All three tests for the Snippets failed as shown in the image below, detailing the specific JUnit output*   
 ![my output](lab7-screenshot1.png)   
-* Test 1 Failed:   
-* Test 2 Failed:    
-* Test 3 Failed:   
+* Snippet Test 1 Possible Code Change:    
+* Snippet Test 2 Possible Code Change:    
+* Snippet Test 3 Possible Code Change:    
 
 **Output From Reviewed `MarkdownParse.java` Implementation**   
+*All three tests for the Snippets failed as shown in the image below, detailing the specific JUnit output*   
 ![reviewed output](lab7-screenshot3.png)   
-* Test 1 Failed:   
-* Test 2 Failed:   
-* Test 3 Failed:   
 
 ---    
