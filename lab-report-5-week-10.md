@@ -5,7 +5,7 @@
 **[Provided Repository Link](https://github.com/nidhidhamnani/markdown-parser.git)**   
 
 ### Different Output #1    
-1. **Link to Test File:** [`510.md`](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/510.md)   
+1. [**Link to Test File:** `510.md`](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/510.md)   
 2. **Expected Output:** `[]`   
 ![expected output1](lab9-screenshot4.png)   
 3. **Actual Output:** my repository -`[]` ; provided repository - `[/uri]`   
@@ -17,7 +17,7 @@
 ---   
 
 ### Different Output #2    
-1. **Link to Test File:** [`511.md`](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/511.md)   
+1. [**Link to Test File:** `511.md`](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/511.md)   
 2. **Expected Output:** `[/uri]`  
 ![expected output1](lab9-screenshot5.png)   
 3. **Actual Output:** my repository -`[]` ; provided repository - `[/uri]`   
