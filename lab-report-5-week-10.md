@@ -11,7 +11,7 @@
 3. **Actual Output:** my repository -`[]` ; provided repository - `[/uri]`   
 *Found by using `vimDiff` on the result of running a bash for loop with the command `bash script.sh`. The correct implementation based on the result is my repository.*
 ![different output1](lab9-screenshot3.png)     
-4. **Explanation of Bug:** The incorrect output is because the code in the provided repository did not account for spaces between `nextCloseBracket` and the `openParen`. With the current code, it only checks whether any of the indices are out of bounds. To resolve the bug, at line 73, it should incorporate an if statement to check whether there are spaces between `nextCloseBracket` and `openParen`, and if so, it should not consider that as a valid link.    
+4. **Explanation of Bug:** The incorrect output is because the code in the provided repository did not account for spaces between `nextCloseBracket` and the `openParen`. The current code only checks whether any of the indices are out of bounds and the only condition that determines a valid link is whether the link contains any spaces or new lines. To resolve the bug, at line 73, the code should incorporate an if statement to check whether there are spaces between `nextCloseBracket` and `openParen`, and if so, the link should not consider as a valid link.    
 ![code change1](lab9-screenshot6.png)
 
 ---   
@@ -23,7 +23,7 @@
 3. **Actual Output:** my repository -`[]` ; provided repository - `[/uri]`   
 *Found by using `vimDiff` on the result of running a bash for loop with the command `bash script.sh`. The correct implementation based on the result is the provided repository.*   
 ![different output1](lab9-screenshot3.png)   
-4. **Explanation of Bug:** The incorrect output is because the code in my repository did not account for brackets within the brackets that contain the description of the link. With the current code, after it finds that there is a close bracket after the found index, it only increments the `closeBracket` reference by one, which is not sufficient when there are more than one additional close bracket. Therefore, this part of the code (lines 41 to 43) needs to be fixed in order to resolve the bug.    
+4. **Explanation of Bug:** The incorrect output is because the code in my repository did not account for brackets within the brackets that contain the description of the link. With the current code at lines 41 to 43, after a close bracket is found after the current `closeBracket` index, it only increments the `closeBracket` reference by one, which is not sufficient when there are more than one additional close bracket. This caused the if statement at line 56 to fail because the difference between `openParen` and `closeBracket` is not equal to one, in turn causing the link to not be added to the arraylist despite being a valid link.    
 ![code change1](lab9-screenshot7.png)
 
 ---   
